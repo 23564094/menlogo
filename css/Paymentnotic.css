@@ -7,8 +7,8 @@ body {
 }
 
 .card {
-  width: max-content;
-  height: max-content;
+  width:auto;
+  height:auto;
   color: white;
   background-color: #3AA0E4;
   position: relative;
