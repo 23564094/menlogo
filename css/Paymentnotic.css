@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: max-content;
+  height: max-content;
+  color: white;
+  background-color: #3AA0E4;
+  position: relative;
+  border-radius: 6px;
+  font-family: Arial;
+}
+
+.card > label {
+  cursor: pointer;
+}
+
+.card > h1 {
+  margin: 15px;
+}
+
+.card > p {
+  margin: 15px;
+}
+
+.hint {
+  height: 30px;
+  width: 30px;
+  color: white;
+  background-color: rgba(0,0,0,0.85);
+  border-radius: 15px;
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  transition: .2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hint > span {
+  position: absolute;
+  top: 7px;
+  right: 12px;
+}
+
+.hint > p {
+  overflow: hidden;
+  max-height: 0px;
+  transition-delay: 0.2s;
+}
+
+#hint-click:checked + .hint {
+  height: calc(100% + 30px);
+  width: calc(100% + 30px);
+}
+
+#hint-click:checked + .hint > p {
+  max-height: 999px;
+} 
+
