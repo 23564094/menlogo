@@ -1,0 +1,49 @@
+.section {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  position: relative;
+  min-height: 400px;
+}
+
+/* SECTION SPECIFIC STYLINGS*/
+
+#s9 {
+  background: url("https://playboys.neocities.org/img/cover.jpg");
+  background-size: cover;
+}
+
+
+#s10 {
+  background: url("https://playboys.neocities.org/img/bgone.jpg");
+  background-size: cover;
+}
+
+
+#s1 {
+  background: url("https://playboys.neocities.org/img/adultphoto/11.jpg");
+  background-size: cover;
+}
+
+#s2 {
+  background: url("https://playboys.neocities.org/img/adultphoto/22.jpg");
+  background-size: cover;
+}
+#s3 {
+  background: url("https://playboys.neocities.org/img/adultphoto/33.jpg");
+  background-size: cover;
+}
+
+#s4 {
+  background: url("https://playboys.neocities.org/img/adultphoto/44.jpg");
+  background-size: cover;
+}
+
+
+#s11 {
+  background: linear-gradient(
+    90deg,
+    rgba(44, 69, 135, 1) 0%,
+    rgba(76, 112, 199, 1) 35%,
+    rgba(0, 255, 229, 1) 100%
+  );
