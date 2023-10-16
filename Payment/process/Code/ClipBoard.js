@@ -1,37 +1,15 @@
-// COPY TO CLIPBOARD
-// Text in an element
-function copyToClipboard(textSelector) {
-  const textToCopy = document.querySelector(textSelector);
-  const selection = window.getSelection();
-  const range = document.createRange();
-  
-  range.selectNodeContents(textToCopy);
-  selection.removeAllRanges();
-  selection.addRange(range);
-  
-  document.execCommand('copy');
-  selection.removeAllRanges();
+const textElement = document.getElementById("text");
+const copyButton = document.getElementById("copy");
 
-  // Custom feedback
-  alert('Text copied: ' + textToCopy.textContent);
-}
+const copyText = (e) => {
+  window.getSelection().selectAllChildren(textElement);
+  document.execCommand("copy");
+  e.target.setAttribute("tooltip", "Copied! ✅");
+};
 
-// Text as string
-// function copyToClipboard(text) {
-//   const element = document.createElement('textarea');
-//   element.value = text;
+const resetTooltip = (e) => {
+  e.target.setAttribute("tooltip", "Copy to clipboard");
+};
 
-//   document.body.appendChild(element);
-//   element.select();
-//   document.execCommand('copy');
-//   document.body.removeChild(element);
-
-//   // Custom feedback
-//   alert('Text copied: ' + text);
-// };
-
-
-// USAGE
-document.querySelector('.button').addEventListener('click', function() {
-  copyToClipboard('.text');
-});
+copyButton.addEventListener("click", (e) => copyText(e));
+copyButton.addEventListener("mouseover", (e) => resetTooltip(e));
