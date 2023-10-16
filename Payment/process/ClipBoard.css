@@ -14,6 +14,7 @@ html {
 }
 body {
   height: 100vh;
+  background-color: var(--primary-color);
   display: grid;
   place-items: center;
   padding: 20px;
@@ -59,6 +60,18 @@ body {
   border-radius: 100%;
 }
 
+.r {
+  background-color: red;
+}
+
+.y {
+  background-color: yellow;
+}
+
+.g {
+  background-color: #0f0;
+}
+
 .copy {
   fill:rgba(0,0,0,0.5);
   height: 40%;
@@ -96,7 +109,7 @@ height: 3px;
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-
+  background:rgba(255,255,255,0.4); 
   border-radius:10px;
 }
 
