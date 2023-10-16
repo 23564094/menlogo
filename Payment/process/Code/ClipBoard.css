@@ -1,5 +1,6 @@
 $white: #ffffff;
 $black: #000000;
+$bg: #e8ebee;
 $radius: 15px;
 $shadow-color: #caced1;
 $text-font: "Quicksand", sans-serif;
@@ -21,6 +22,7 @@ body {
   justify-content: center;
   align-items: center;
   color: $white;
+  background-color: $bg;
 }
 
 ::selection {
@@ -42,8 +44,8 @@ body {
 
 #text {
   box-sizing: border-box;
-  background-color: red;
-  color: $white;
+  background-color: $bg;
+  color: $black;
   border-radius: $radius;
   padding: 10px 15px;
   margin: 20px;
