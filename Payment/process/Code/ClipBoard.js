@@ -11,7 +11,7 @@ $(document).ready(function() {
      $temp.remove();
     
     
-    $('.confirmation').hide().html('Order ID Copied Succes').fadeIn(100).delay(800).fadeOut(200);
+    $('.confirmation').hide().html('Copied <b>' + btntxt + ' code</b> to clipboard').fadeIn(100).delay(800).fadeOut(200);
    
     $( '.main' ).trigger( "click" );
   });
