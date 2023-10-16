@@ -13,7 +13,7 @@ html { box-sizing: border-box; overflow-y: scroll;}
 }
 .container {
   display: list;
-  grid-template-columns: minmax(60px, 1fr)  repeat(2, minmax(min-content, 340px)) minmax(60px, 1fr);
+  list-template-columns: minmax(60px, 1fr)  repeat(2, minmax(min-content, 340px)) minmax(60px, 1fr);
   grid-template-rows: 1fr repeat(2, 120px) 1fr;
   justify-items: center;
   align-items: center;
@@ -149,6 +149,13 @@ html { box-sizing: border-box; overflow-y: scroll;}
 }
 
 .color-1 {background-color: #7234f0;}
+.color-2 {background-color: #8b56f4;}
+.color-3 {background-color: #a277f7;}
+.color-4 {background-color: #bea0f8;}
+.color-5 {background-color: #00c7e2;}
+.color-6 {background-color: #08d1e7;}
+.color-7 {background-color: #6fdeee;}
+.color-8 {background-color: #abebf4;}
 
 .copy {
   cursor: pointer;
@@ -166,10 +173,9 @@ html { box-sizing: border-box; overflow-y: scroll;}
 
 .tooltip {
   position: absolute;
-  text-align: center;
-  top: auto;
-  left:auto;
-  background: red;
+  top: 30px;
+  left: -30px;
+  background: green;
   padding: 10px 15px;
   display: flex;
   justify-content: center;
