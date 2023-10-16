@@ -1,9 +1,21 @@
-$(".actions").prepend('Do You Copy Order ID?</p><p><label><input type="checkbox" id="checkbox"> <em>Yes I Copied</em> </label></p>');
-        
-$('.hs-button').prop('disabled', true); // disabled by default
-
-$('#checkbox').click(function() {
-   // change on checkbox click
-   $('.hs-button').prop('disabled', !$('#checkbox').prop('checked'));
+jQuery(document).ready(function($){
+	//open popup
+	$('.cd-popup-trigger').on('click', function(event){
+		event.preventDefault();
+		$('.cd-popup').addClass('is-visible');
+	});
+	
+	//close popup
+	$('.cd-popup').on('click', function(event){
+		if( $(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup') ) {
+			event.preventDefault();
+			$(this).removeClass('is-visible');
+		}
+	});
+	//close popup when clicking the esc keyboard button
+	$(document).keyup(function(event){
+    	if(event.which=='27'){
+    		$('.cd-popup').removeClass('is-visible');
+	    }
+    });
 });
-        
