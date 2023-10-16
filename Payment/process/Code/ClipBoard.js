@@ -1,50 +1,37 @@
-$(document).ready(function() {
+// COPY TO CLIPBOARD
+// Text in an element
+function copyToClipboard(textSelector) {
+  const textToCopy = document.querySelector(textSelector);
+  const selection = window.getSelection();
+  const range = document.createRange();
   
-/*  ANIMATION COLORS  */
-  $("div[class*=primary], .color__btn-1, .color__btn-1>i").on("click", function(e) {
-    e.preventDefault;
-    // move just if click the background
-    if (event.target !== this)
-    return;
-    $("div[class*=primary], .color__btn-1").toggleClass("move");
-    
-    $(".color__box-2").toggleClass("move");
-  });
+  range.selectNodeContents(textToCopy);
+  selection.removeAllRanges();
+  selection.addRange(range);
   
-  $("div[class*=secondary], .color__btn-2, .color__btn-2>i").on("click", function() {
-    
-    // move just if click the background
-    if (event.target !== this)
-    return;
-    $("div[class*=secondary], .color__btn-2").toggleClass("move");
-  });
+  document.execCommand('copy');
+  selection.removeAllRanges();
 
-/*  COPY TO CLIPBOARD  */
+  // Custom feedback
+  alert('Text copied: ' + textToCopy.textContent);
+}
 
-// click the icon
-$("[id^=copy-]").on("click", function(e) {
-  e.preventDefault;
-  
-  
-  // find the id number of the parent
-  let num = $(this).parent().attr("id").slice("color-".length);
-  let elem = $(".color-" + num);
-  
-  // copy the text of the background color
-  let $temp = $("<input>");
-  $("body").append($temp);
-  $temp.val(elem.children(":first").text()).select();
-  document.execCommand("copy");
-  $temp.remove();
-  
-  $(this).children(".tooltip").addClass("appear").delay(1000).queue(function( next ){
-    $(this).removeClass("appear"); 
-    $(this).dequeue();
-  });
+// Text as string
+// function copyToClipboard(text) {
+//   const element = document.createElement('textarea');
+//   element.value = text;
+
+//   document.body.appendChild(element);
+//   element.select();
+//   document.execCommand('copy');
+//   document.body.removeChild(element);
+
+//   // Custom feedback
+//   alert('Text copied: ' + text);
+// };
+
+
+// USAGE
+document.querySelector('.button').addEventListener('click', function() {
+  copyToClipboard('.text');
 });
-
-});
-
-
-
-
