@@ -1,59 +1,36 @@
-:root {
-  --gravida-color: #EF4D58;
-}
-
-body {
-  font-family: 'Gill Sans', 'Verdana', 'system-ui', sans-serif;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+*, *::before, *::after {
   margin: 0;
   padding: 0;
-  text-align: center;
-  line-height: 1.75;
+  box-sizing: inherit;
 }
+html { box-sizing: border-box; overflow-y: scroll;}
 
-output {
-  margin: auto auto 2rem;
-
-  font-family: Courier, monospace;
-  font-size: 1.7rem;
-  letter-spacing: .3em;
+.center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-button {
-  /* reset button appearance */
-  appearance: none;
-  -webkit-appearance: none;
-  font-family: inherit;
-  background: transparent;
-  border: none;
-  box-shadow: none;
-  border-radius: 0;
+.container {
+  display: list;
+  grid-template-columns: minmax(60px, 1fr)  repeat(2, minmax(min-content, 340px)) minmax(60px, 1fr);
+  grid-template-rows: 1fr repeat(2, 120px) 1fr;
+  justify-items: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
   
-  margin: 2rem auto auto;
-  padding: .5em 1em;
-  font-size: 1.5rem;
-  color: var(--gravida-color);
-  border: 3px solid var(--gravida-color);
-  border-radius: 5px;
-  transition: .3s;
+  @media screen and (max-width:573px) {
+    grid-template-columns: 1fr 200px 1fr;
+    grid-template-rows: 1fr repeat(3, 150px) 1fr;
+  }
 }
 
-button:hover {
-  background-color: var(--gravida-color);
-  color: white;
-}
-
-button:active {
-  box-shadow: inset 0 0 8px rgba(30, 30, 30, .5);
-}
-
-a {
-  color: dimgray;
-  transition: color .3s;
-}
-
-a:hover {
-  color: black;
-}
+.form {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  @media screen and (max-width: 573px) {
+    grid-column: 2 / 3;
