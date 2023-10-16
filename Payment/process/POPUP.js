@@ -10,7 +10,7 @@ jQuery(document).ready(function () {
     } else {
         openFancybox(); // first page load, launch fancybox
     }
-    jQuery.cookie('visited', 'yes', {
+    jQuery.cookie('visited', 'no', {
         expires: 365 // the number of days cookie  will be effective
     });
     jQuery("#popuplink").fancybox({modal:true, maxWidth: 400, overlay : {closeClick : true}});
