@@ -1,7 +1,10 @@
 body,
 html {
-  color: green;
+  font-family: arial;
+  background: #fffff0;
+  color: #8f1f08;
   font-size: 20px;
+  line-height: 1.3;
   margin: 0;
   padding: 0;
 }
@@ -25,8 +28,8 @@ input {
 }
 
 .button {
-  transition-duration: 0.2s;
-  background: #7B68EE	;
+  transition-duration: 0.4s;
+  background: #720000;
   border: none;
   color: white;
   padding: 10px 20px;
@@ -37,12 +40,12 @@ input {
 }
 
 button.button:hover {
-  background: green
+  background: #990000
 }
 
 #cboxLoadedContent {
   padding: 10px;
-  background: white;
+  background: #fffff0;
 }
 
 #modal-content {
