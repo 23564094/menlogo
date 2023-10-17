@@ -1,17 +1,49 @@
-jQuery(document).ready(function () {
-    function openFancybox() {
-        setTimeout(function () {
-            jQuery('#popuplink').trigger('click');
-        }, 500);
-    };
-    var visited = jQuery.cookie('visited');
-    if (visited == 'yes') {
-         // second page load, cookie active
-    } else {
-        openFancybox(); // first page load, launch fancybox
-    }
-    jQuery.cookie('visited', 'yes', {
-        expires: 365 // the number of days cookie  will be effective
-    });
-    jQuery("#popuplink").fancybox({modal:true, maxWidth: 400, overlay : {closeClick : true}});
+$(".clear-cookie").on("click", function() {
+  Cookies.remove('colorboxShown');
+  $(this).replaceWith("<p><em>Cookie cleared. Re-run demo</em></p>");
 });
+
+$(".order-cheezburger").on("click", function() {
+  $.colorbox.close();
+});
+
+function onPopupOpen() {
+  $("#modal-content").show();
+  $("#yurEmail").focus();
+}
+
+function onPopupClose() {
+  $("#modal-content").hide();
+  Cookies.set('colorboxShown', 'no', {
+    expires: 1
+  });
+  $(".clear-cookie").fadeIn();
+  lastFocus.focus();
+}
+
+function displayPopup() {
+  $.colorbox({
+    inline: true,
+    href: "#modal-content",
+    className: "cta",
+    width: 600,
+    height: 450,
+    onComplete: onPopupOpen,
+    onClosed: onPopupClose
+  });
+}
+
+var lastFocus;
+var popupShown = Cookies.get('colorboxShown');
+
+if (popupShown) {
+  console.log("Cookie found. No action necessary");
+  $(".clear-cookie").show();
+} else {
+  console.log("No cookie found. Opening popup in 3 seconds");
+  $(".clear-cookie").hide();
+  setTimeout(function() {
+    lastFocus = document.activeElement;
+    displayPopup();
+  }, 300);
+}
