@@ -1,15 +1,18 @@
-const textElement = document.getElementById("text");
-const copyButton = document.getElementById("copy");
+const answer = document.getElementById("copyResult");
+const copy   = document.getElementById("copyButton");
+const selection = window.getSelection();
+const range = document.createRange();
+const textToCopy = document.getElementById("textToCopy")
 
-const copyText = (e) => {
-  window.getSelection().selectAllChildren(textElement);
-  document.execCommand("copy");
-  e.target.setAttribute("tooltip", "Copied! ✅");
-};
-
-const resetTooltip = (e) => {
-  e.target.setAttribute("tooltip", "Copy to clipboard");
-};
-
-copyButton.addEventListener("click", (e) => copyText(e));
-copyButton.addEventListener("mouseover", (e) => resetTooltip(e));
+copy.addEventListener('click', function(e) {
+    range.selectNodeContents(textToCopy);
+    selection.removeAllRanges();
+    selection.addRange(range);
+    const successful = document.execCommand('copy');
+    if(successful){
+      answer.innerHTML = 'Copied!';
+    } else {
+      answer.innerHTML = 'Unable to copy!';  
+    }
+    window.getSelection().removeAllRanges()
+});
