@@ -14,7 +14,7 @@ function onPopupOpen() {
 
 function onPopupClose() {
   $("#modal-content").hide();
-  Cookies.set('colorboxShown', 'no', {
+  Cookies.set('colorboxShown', 'yes', {
     expires: 1
   });
   $(".clear-cookie").fadeIn();
@@ -27,7 +27,7 @@ function displayPopup() {
     href: "#modal-content",
     className: "cta",
     width: 600,
-    height: 450,
+    height: 350,
     onComplete: onPopupOpen,
     onClosed: onPopupClose
   });
@@ -45,5 +45,5 @@ if (popupShown) {
   setTimeout(function() {
     lastFocus = document.activeElement;
     displayPopup();
-  }, 300);
+  }, 3000);
 }
