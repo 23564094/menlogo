@@ -15,9 +15,7 @@ body {
     font-size: 21px;
     color: $darkcloud;
     line-height: 1.5;
-  background:
-    url(https://playboys.pages.dev/img/Cover.jpg)
-    center / cover no-repeat fixed;
+    background: linear-gradient(0deg, $grape 0%, $blueberry 100%);
 }
 
 .container {
