@@ -28,7 +28,7 @@ p {
   margin: 20px 0 60px;
   font-size: 1.25em;
   &.success {
-    color:#48C9B0;
+    color:#7B68EE;
   }
   &.error {
     color: #D06079;
