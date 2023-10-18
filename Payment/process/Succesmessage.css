@@ -28,10 +28,10 @@ p {
   margin: 20px 0 60px;
   font-size: 1.25em;
   &.success {
-    color:#7B68EE;
+    color:#1E90FF	;
   }
   &.error {
-    color: #D06079;
+    color: #1E90FF	;
   }
 }
 
