@@ -9,19 +9,19 @@
 /* SECTION SPECIFIC STYLINGS*/
 
 #s9 {
-  background: url("https://playboys.neocities.org/img/cover.jpg");
+  background: url("/img/cover.jpg");
   background-size: cover;
 }
 
 
 #s10 {
-  background: url("https://playboys.neocities.org/img/bgone.jpg");
+  background: url("/img/bgone.jpg");
   background-size: cover;
 }
 
 
 #s1 {
-  background: url("https://playboys.neocities.org/img/adultphoto/11.jpg");
+  background: url("/img/adultphoto/11.jpg");
   background-size: cover;
 }
 
