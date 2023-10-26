@@ -47,8 +47,8 @@
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-secondary navbar-dark">
                 <a href="index.html" class="navbar-brand mx-4 mb-3">
-                    <h3 class="text-primary"><i class="fa-solid fa-people-group fa-beat-fade"></i> DashBoard</h3>
-                    <h4 class="text-primary"><i class="fa-brands fa-telegram"></i> @indiTeam</h4>
+                    <h4 class="text-primary"><i class="fa-solid fa-people-group"></i> DashBoard</h4>
+                    <h6 class="text-primary"><i class="fa-brands fa-telegram"></i> @indiTeam</h6>
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
                     <div class="position-relative">
@@ -56,8 +56,9 @@
                         <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
                     </div>
                     <div class="ms-3">
-                        <h6 class="mb-0">Jhon Doe</h6>
-                        <span>Admin</span>
+                        <h6 class="mb-0">Arjun Reddy <i class="fa-solid fa-circle-check" style="color: #EB1616;"></i></h6>
+                        <span><i class="fa-solid fa-l fa-shake" style="color: #ffffff;"></i><i class="fa-solid fa-e fa-shake" style="color: #ffffff;"></i><i class="fa-solid fa-g fa-shake" style="color: #ffffff;"></i><i class="fa-solid fa-e fa-shake" style="color: #ffffff;"></i><i class="fa-solid fa-n fa-shake" style="color: #ffffff;"></i><i class="fa-solid fa-d fa-shake" style="color: #ffffff;"></i></span>
+                        <i class="fa-solid fa-medal fa-flip" style="color: #ff0606;"></i>
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
@@ -169,7 +170,7 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <img class="rounded-circle me-lg-2" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                            <span class="d-none d-lg-inline-flex">John Doe</span>
+                            <span class="d-none d-lg-inline-flex">Arjun Reddy</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
                             <a a href="#" onclick="Alert.error('You Are Currently on Demo Dashboard,<br>You have Buy Premium Membership,<br>Please Contact Telegram @IndiTeam ','Something is wrong!',{displayDuration: 5000})"><i class="fa-solid fa-user-pen" style="color: #ffffff;"></i> Edit Profile</a> <br> <br>
@@ -231,107 +232,257 @@
             <!-- Sale & Revenue End -->
 
 
-            <!-- Sales Chart Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="row g-4">
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="bg-secondary text-center rounded p-4">
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">Worldwide Sales</h6>
-                                <a href="">Show All</a>
-                            </div>
-                            <canvas id="worldwide-sales"></canvas>
+
+            
+      <!-- Table Start -->
+      <div class="container-fluid pt-4 px-4">
+        <div class="row g-4">
+            <div class="col-sm-12 col-xl-6">
+                <div class="bg-secondary rounded h-100 p-4">
+                    <h6 class="mb-4">User Infomation</h6>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First Name</th>
+                                <th scope="col">Last Name</th>
+                                <th scope="col">Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>jhon@email.com</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>mark@email.com</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>jacob@email.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+                                    <!-- Widgets End -->
+                                    <div class="col-sm-12 col-xl-6">
+                                        <div class="bg-secondary rounded h-100 p-4">
+                                            <h6 class="mb-4">Review</h6>
+                                            <span>Last 5 Clinet Review</span>
+                                            <div class="owl-carousel testimonial-carousel">
+                                                <div class="testimonial-item text-center">
+                                                    <img class="img-fluid rounded-circle mx-auto mb-4" src="img/testimonial-1.jpg" style="width: 100px; height: 100px;">
+                                                    <h5 class="mb-1">Client Name</h5>
+                                                    <p>Profession</p>
+                                                    <p class="mb-0">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                                                </div>
+                                                <div class="testimonial-item text-center">
+                                                    <img class="img-fluid rounded-circle mx-auto mb-4" src="img/testimonial-2.jpg" style="width: 100px; height: 100px;">
+                                                    <h5 class="mb-1">Client Name</h5>
+                                                    <p>Profession</p>
+                                                    <p class="mb-0">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                    <!-- Widget End -->
+                                                    <div class="col-sm-12 col-xl-6">
+                                                        <div class="bg-secondary rounded h-100 p-4">
+                                                            <h6 class="mb-4">Flush Accordion</h6>
+                                                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                                                <div class="accordion-item bg-transparent">
+                                                                    <h2 class="accordion-header" id="flush-headingOne">
+                                                                        <button class="accordion-button" type="button"
+                                                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                                            aria-expanded="true" aria-controls="flush-collapseOne">
+                                                                            Accordion Item #1
+                                                                        </button>
+                                                                    </h2>
+                                                                    <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                                                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                                                        <div class="accordion-body">
+                                                                            Lorem et ea ea consetetur voluptua duo et aliquyam sanctus sit. Et dolore at erat amet et diam labore lorem dolores. Erat amet stet at dolore dolor ea invidunt, justo nonumy justo takimata magna. Stet lorem vero sed eos justo diam dolores, dolor sit takimata et voluptua aliquyam gubergren tempor.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="accordion-item bg-transparent">
+                                                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                                                        <button class="accordion-button collapsed" type="button"
+                                                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                                                            aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                                            Accordion Item #2
+                                                                        </button>
+                                                                    </h2>
+                                                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                                                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                                                        <div class="accordion-body">
+                                                                            Sea diam dolore aliquyam aliquyam diam et consetetur et. Accusam amet no invidunt invidunt et consetetur, magna ut nonumy kasd erat tempor dolor et. Diam magna dolor sed amet duo dolores magna vero. Amet sit sadipscing ea diam clita lorem sit. Vero et et et tempor diam. Ipsum eirmod sit.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="accordion-item bg-transparent">
+                                                                    <h2 class="accordion-header" id="flush-headingThree">
+                                                                        <button class="accordion-button collapsed" type="button"
+                                                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                                                            aria-expanded="false" aria-controls="flush-collapseThree">
+                                                                            Accordion Item #3
+                                                                        </button>
+                                                                    </h2>
+                                                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                                                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                                                        <div class="accordion-body">
+                                                                            Sea sea sit sanctus magna gubergren kasd, magna justo ea lorem lorem. Elitr aliquyam ipsum clita consetetur duo at nonumy invidunt, invidunt eos dolore vero sit amet amet magna tempor clita, takimata diam justo stet erat et vero erat. Sit ipsum eirmod sea ut vero dolores sea clita nonumy, no.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>                                    
+            <div class="col-sm-12 col-xl-6">
+                <div class="bg-secondary rounded h-100 p-4">
+                    <h6 class="mb-4">Progress Bar</h6>
+                    <div class="pg-bar mb-3">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="bg-secondary text-center rounded p-4">
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">Salse & Revenue</h6>
-                                <ul class="list unstyled">
-                                    <li><a href="#" onclick="Alert.error('Oh Sorry! This alert box indicates a successful or positive action. ','error',{displayDuration: 3000, pos: 'top'})"> S</a></li>
-                            </div>
-                            <canvas id="salse-revenue"></canvas>
+                    <div class="pg-bar mb-3">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="pg-bar mb-3">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="pg-bar mb-3">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="pg-bar mb-0">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Sales Chart End -->
 
 
-            <!-- Recent Sales Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="bg-secondary text-center rounded p-4">
-                    <div class="d-flex align-items-center justify-content-between mb-4">
-                        <h6 class="mb-0">Recent Salse</h6>
-                        <a href="">Show All</a>
-                    </div>
+            <div class="col-12">
+                <div class="bg-secondary rounded h-100 p-4">
+                    <h6 class="mb-4"  style="color: #EB1616 ;" id="available"></h6>
                     <div class="table-responsive">
-                        <table class="table text-start align-middle table-bordered table-hover mb-0">
+                        <table class="table">
                             <thead>
-                                <tr class="text-white">
-                                    <th scope="col"><input class="form-check-input" type="checkbox"></th>
-                                    <th scope="col">Date</th>
-                                    <th scope="col">Invoice</th>
-                                    <th scope="col">Customer</th>
-                                    <th scope="col">Amount</th>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First Name</th>
+                                    <th scope="col">Last Name</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Country</th>
+                                    <th scope="col">ZIP</th>
                                     <th scope="col">Status</th>
-                                    <th scope="col">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <ul class="list unstyled">
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a href="#" onclick="Alert.error('You Are Currently on Demo Dashboard,<br>You have Buy Premium Membership,<br>Please Contact Telegram @IndiTeam ','Something is wrong!',{displayDuration: 5000})"><i class="fa fa-eye" aria-hidden="true"></i>View Details</a></td>
+                                    <th scope="row">1</th>
+                                    <td><p id="dateone"></p></td>
+                                    <td>Doe</td>
+                                    <td>jhon@email.com</td>
+                                    <td>USA</td>
+                                    <td>123</td>
+                                    <td>Member</td>
                                 </tr>
                                 <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a href="#" onclick="Alert.error('You Are Currently on Demo Dashboard,<br>You have Buy Premium Membership,<br>Please Contact Telegram @IndiTeam ','Something is wrong!',{displayDuration: 5000})"><i class="fa fa-eye" aria-hidden="true"></i>View Details</a></td>
+                                    <th scope="row">2</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>mark@email.com</td>
+                                    <td>UK</td>
+                                    <td>456</td>
+                                    <td>Member</td>
                                 </tr>
                                 <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a href="#" onclick="Alert.error('You Are Currently on Demo Dashboard,<br>You have Buy Premium Membership,<br>Please Contact Telegram @IndiTeam ','Something is wrong!',{displayDuration: 5000})"><i class="fa fa-eye" aria-hidden="true"></i>View Details</a></td>
+                                    <th scope="row">3</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>jacob@email.com</td>
+                                    <td>AU</td>
+                                    <td>789</td>
+                                    <td>Member</td>
                                 </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a href="#" onclick="Alert.error('You Are Currently on Demo Dashboard,<br>You have Buy Premium Membership,<br>Please Contact Telegram @IndiTeam ','Something is wrong!',{displayDuration: 5000})"><i class="fa fa-eye" aria-hidden="true"></i>View Details</a></td>
-                                </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a href="#" onclick="Alert.error('You Are Currently on Demo Dashboard,<br>You have Buy Premium Membership,<br>Please Contact Telegram @IndiTeam ','Something is wrong!',{displayDuration: 5000})"><i class="fa fa-eye" aria-hidden="true"></i>View Details</a></td>
-                                </tr>
-                            </ul>
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
-            <!-- Recent Sales End -->
+            <div class="col-12">
+                <div class="bg-secondary rounded h-100 p-4">
+                    <h6 class="mb-4"  style="color: #EB1616;" id="nextmonth"></h6>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Client</th>
+                                    <th scope="col">Service Address</th>
+                                    <th scope="col">Dating time</th>
+                                    <th scope="col">Amount</th>
+                                    <th scope="col">Payment Status</th>
+                                    <th scope="col">Method</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td><p id="dateone"></p></td>
+                                    <td>Doe</td>
+                                    <td>jhon@email.com</td>
+                                    <td>USA</td>
+                                    <td>123</td>
+                                    <td>123</td>
+                                    <td>Member</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>mark@email.com</td>
+                                    <td>UK</td>
+                                    <td>456</td>
+                                    <td>Member</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>jacob@email.com</td>
+                                    <td>AU</td>
+                                    <td>789</td>
+                                    <td>Member</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Table End -->
+
+
 
 
             <!-- Widgets Start -->
@@ -453,6 +604,8 @@
                     </div>
                 </div>
             </div>
+
+                    
             <!-- Widgets End -->
             <div id="popupWrap" class="popups">
                 <h2 class="popup-ntfctn"></h2>
@@ -494,6 +647,8 @@
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
     <script src="js/Button.js"></script>
     <script src="js/noti.js"></script>
+    <script src="js/DatesForJob.js"></script>
+    <script src="js/JobHistry.js"></script>
     
     <script src="https://kit.fontawesome.com/d5ed6967fa.js" crossorigin="anonymous"></script>
     <!-- Template Javascript -->
