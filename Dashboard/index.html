@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>DarkPan - Bootstrap 5 Admin Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+
+
+    <!-- Template Stylesheet -->
+    <link href="css/forms.css" rel="stylesheet">
+    <link href="css/Loginautopopup.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid position-relative d-flex p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only"></span>
+            </div>
+        </div>
+        <style>
+            .tooltip {
+              position: relative;
+              display: inline-block;
+            }
+            
+            .tooltip .tooltiptext {
+              visibility: hidden;
+              width: 140px;
+              background-color: red;
+              color: rgb(255, 255, 255);
+              text-align: center;
+              border-radius: 6px;
+              padding: 5px;
+              position: absolute;
+              z-index: 1;
+              bottom: 150%;
+              left: 50%;
+              margin-left: -75px;
+              opacity: 0;
+              transition: opacity 0.3s;
+            }
+            
+            .tooltip .tooltiptext::after {
+              content: "";
+              position: absolute;
+              top: 100%;
+              left: 50%;
+              margin-left: -5px;
+              border-width: 5px;
+              border-style: solid;
+              border-color: #ff0000;
+            }
+            
+            .tooltip:hover .tooltiptext {
+              visibility: visible;
+              opacity: 1;
+            }
+            </style>
+        <!-- Spinner End -->
+        <div class="popup-card">
+            <button id="close-btn">
+              <span class="fa fa-times-circle"> </i> </span>
+            </button>
+          
+            <div>
+              <span class="fa fa-question-circle"> </i> </span>
+            </div>
+          
+            <div class="content">
+              <h5>Demo Accoount Login<br> UserID & Password <br> Down Below,Copy Please it</h5>
+              <div class="tooltip">
+              <input type="text" value="Demo" id="myInput">
+              <button onclick="myFunction()" onmouseout="outFunc()">
+                <span class="tooltiptext" id="myTooltip">Copy UserID & Password to clipboard</span><i class="fa fa-clipboard" aria-hidden="true"></i>
+            </i>
+                </button>
+              </div>
+              
+              <script>
+              function myFunction() {
+                var copyText = document.getElementById("myInput");
+                copyText.select();
+                copyText.setSelectionRange(0, 99999);
+                navigator.clipboard.writeText(copyText.value);
+                
+                var tooltip = document.getElementById("myTooltip");
+                tooltip.innerHTML = "Copied: " + copyText.value;
+              }
+              
+              function outFunc() {
+                var tooltip = document.getElementById("myTooltip");
+                tooltip.innerHTML = "Copy UserID & Password";
+              }
+              </script>
+            </div>
+          </div>
+        <!-- Sign In Start -->
+
+        <div class="container">
+            <h1>Login</h1>
+            <form action="">
+                <input type="text" placeholder="Username" class="id" required>
+                <input type="password" placeholder="Password" class="pw" required>
+                <input type="submit" value="Login" onclick="checkPswd()">
+            </form>
+        </div>
+
+
+        <!-- Sign In End -->
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://kit.fontawesome.com/d5ed6967fa.js" crossorigin="anonymous"></script>
+    <script src="js/Password.js"></script>
+    <script src="js/LoginDemoPopup.js"></script>
+
+    <!-- Template Javascript -->
+</body>
+
+</html>
