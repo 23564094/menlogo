@@ -27,9 +27,15 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/noti.css" rel="stylesheet">
-
+    <link href="css/snackbar.css" rel="stylesheet">
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+
+        <!-- Fontawesome CDN Link -->
+        <link
+          rel="stylesheet"
+        />
 </head>
 
 <body>
@@ -173,10 +179,10 @@
                             <span class="d-none d-lg-inline-flex">Arjun Reddy</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
-                            <a a href="#" onclick="Alert.error('You Are Currently on Demo Dashboard,<br>You have Buy Premium Membership,<br>Please Contact Telegram @IndiTeam ','Something is wrong!',{displayDuration: 5000})"><i class="fa-solid fa-user-pen" style="color: #ffffff;"></i> Edit Profile</a> <br> <br>
-                            <a href="#" onclick="Alert.error('You Are Currently on Demo Dashboard,<br>You have Buy Premium Membership,<br>Please Contact Telegram @IndiTeam ','Something is wrong!',{displayDuration: 5000})"><i class="fa-solid fa-sliders" style="color: #ffffff;"></i> Settings</a><br> <br>
-                            <a  href="https://playboys.pages.dev/" onclick="Alert.success('Hi there Account Logout Success. ','Log out Success',{displayDuration: 3000, pos: 'top'})"><i class="fa-solid fa-right-from-bracket" style="color: #ffffff;"></i> LogOut!</a><br> <br>
-                            <a  href="https://t.me/inditeam" onclick="Alert.success('Hi there We Are connecting to <br> Support Team. ','Connecting Success',{displayDuration: 3000, pos: 'top'})"><i class="fa-brands fa-telegram" style="color: #ffffff;"></i> Contact Support</a><br> <br>
+                            <a a href="#" onclick="Alert.error('You Are Currently on Demo Dashboard,<br>You have Buy Premium Membership,<br>Please Contact Telegram @IndiTeam ','Something is wrong!',{displayDuration: 5000})">   <i class="fa-solid fa-user-pen" style="color: #ffffff;"></i> Edit Profile</a> <br> <br>
+                            <a href="#" onclick="Alert.error('You Are Currently on Demo Dashboard,<br>You have Buy Premium Membership,<br>Please Contact Telegram @IndiTeam ','Something is wrong!',{displayDuration: 5000})">   <i class="fa-solid fa-sliders" style="color: #ffffff;"></i> Settings</a><br> <br>
+                            <a  href="https://playboys.pages.dev/" onclick="Alert.success('Hi there Account Logout Success. ','Log out Success',{displayDuration: 3000, pos: 'top'})">   <i class="fa-solid fa-right-from-bracket" style="color: #ffffff;"></i> LogOut!</a><br> <br>
+                            <a  href="https://t.me/inditeam" onclick="Alert.success('Hi there We Are connecting to <br> Support Team. ','Connecting Success',{displayDuration: 3000, pos: 'top'})">   <i class="fa-brands fa-telegram" style="color: #ffffff;"></i> Contact Support</a><br> <br>
                         </div>
                     </div>
                 </div>
@@ -235,6 +241,7 @@
 
 
 
+            <div id="snackbar">Errors</div>
             
       <!-- Table Start -->
       <div class="container-fluid pt-4 px-4">
@@ -247,38 +254,38 @@
                             <tr>
                                 <th scope="col">Name</th>
                                 <th scope="col">Arjun Reddy</th>
+                            </tr>
                                 <th scope="col">Package</th>
                                 <th scope="col">Legend</th>
                             </tr>
                             <tr>
                                 <th scope="col">Identy</th>
                                 <th scope="col">Verified</th>
+                            </tr>
                                 <th scope="col">UserID</th>
                                 <th scope="col">Arjun565</th>
                             </tr>
                             <tr>
                                 <th scope="col">Join Date</th>
                                 <th scope="col">2Year 4Month ago</th>
+                            </tr>
                                 <th scope="col">Last Login</th>
                                 <th scope="col">18Sec age</th>
                             </tr>
                             <tr>
                                 <th scope="col">Last Done Job</th>
                                 <th scope="col"  id="Lastdonejob"> </th>
+                            </tr>
                                 <th scope="col">Upcoming Job</th>
                                 <th scope="col" id="upcomingjob"> </th>
                             </tr>
                             <tr>
-                                <th scope="col">#</th>
                                 <th scope="col">First Name</th>
                                 <th scope="col">Last Name</th>
-                                <th scope="col">Email</th>
                             </tr>
                             <tr>
-                                <th scope="col">#</th>
                                 <th scope="col">First Name</th>
                                 <th scope="col">Last Name</th>
-                                <th scope="col">Email</th>
                             </tr>
                         </tbody>
                     </table>
@@ -310,23 +317,26 @@
                                  <center>        <h6 class="mb-4" class="fa-solid fa-file-alt" style="color: #EB1616;">Available <ion-icon name="trending-up-sharp"></ion-icon> Jobs in Recent!</h6></center>   
                                             <div class="table-responsive">
                                                 <table class="table">
+                                                    
                                                     <thead>
                                                         <tr>
                                                             <th scope="col">#</th>
-                                                            <th scope="col"><i class="fa-solid fa-user" style="color: #EB1616;"> 𝑵𝒂𝒎𝒆</i> </th>
-                                                            <th scope="col"><i class="fa-solid fa-venus" style="color: #EB1616;"> 𝑪𝒍𝒊𝒆𝒏𝒕</i> </th>
-                                                            <th scope="col"><i class="fa-solid fa-location-dot" style="color: #EB1616;"> 𝙎𝙚𝙧𝙫𝙞𝙘𝙚</i> </th>
-                                                            <th scope="col"><i class="fa-solid fa-clock" style="color: #EB1616;"> 𝑫𝒂𝒕𝒊𝒏𝒈</i> </th>
-                                                            <th scope="col"><i class="fa-solid fa-indian-rupee-sign" style="color: #EB1616;"> 𝑨𝒎𝒐𝒖𝒏𝒕</i> </th>
-                                                            <th scope="col"><i class="fa-brands fa-amazon-pay" style="color: #EB1616;"> 𝑺𝒕𝒂𝒕𝒖𝒔</i> </th>
-                                                            <th scope="col"><i class="fa-solid fa-bolt" style="color: #EB1616;"> 𝑴𝒆𝒕𝒉𝒐𝒅</i> </th>
+                                                            <th scope="col"><i class="fa-solid fa-calendar-days" style="color: #EB1616;"></i> </th>
+                                                            <th scope="col"><i class="fa-solid fa-user" style="color: #EB1616;"></i> </th>
+                                                            <th scope="col" style="color: #1E90FF;"><b>Contact Details</th>
+                                                            <th scope="col"><i class="fa-solid fa-location-dot" style="color: #EB1616;"></i> </th>
+                                                            <th scope="col"><i class="fa-solid fa-clock" style="color: #EB1616;"></i> </th>
+                                                            <th scope="col"><i class="fa-solid fa-indian-rupee-sign" style="color: #EB1616;"></i> </th>
+                                                            <th scope="col" style="color: #EB1616;">Payment Status</th>
+                                                            <th scope="col" style="color: #1bc78e;">Payment Method</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
                                                             <th scope="row">1</th>
                                                             <td><p id="up1"></p></td>
-                                                            <td>Doe</td>
+                                                            <td><b>Sanjida</b></td>
+                                                            <td> <button onclick="myFunction()" class="button button3" >View</button></td>
                                                             <td>jhon@email.com</td>
                                                             <td>USA</td>
                                                             <td>123</td>
@@ -335,10 +345,11 @@
                                                         </tr>
                                                         <tr>
                                                             <th scope="row">2</th>
-                                                            <td><p id="up2"></p></td>
-                                                            <td>Doe</td>
+                                                            <td><b><p id="up2"></p></b></td>
+                                                            <td> <button type="button" class="button button3" onclick="myFunction()">hh</button></td>
                                                             <td>jhon@email.com</td>
                                                             <td>USA</td>
+                                                            <td>123</td>
                                                             <td>123</td>
                                                             <td> <button type="button" class="btn btn-primary"><i class="fa-solid fa-heart fa-shake" style="color: #ffffff;"></i> Job Pending </button></td>
                                                             <td>Member</td>
@@ -350,6 +361,7 @@
                                                             <td>jhon@email.com</td>
                                                             <td>USA</td>
                                                             <td>123</td>
+                                                            <td>123</td>
                                                             <td> <button type="button" class="btn btn-primary"><i class="fa-solid fa-heart fa-shake" style="color: #ffffff;"></i> Job Pending </button></td>
                                                             <td>Member</td>
                                                         </tr>
@@ -359,6 +371,7 @@
                                                             <td>Doe</td>
                                                             <td>jhon@email.com</td>
                                                             <td>USA</td>
+                                                            <td>123</td>
                                                             <td>123</td>
                                                             <td> <button type="button" class="btn btn-danger"><i class="fa-regular fa-clock fa-spin" style="color: #ffffff;"></i> Review </button></td>
                                                             <td>Member</td>
@@ -370,6 +383,7 @@
                                                             <td>jhon@email.com</td>
                                                             <td>USA</td>
                                                             <td>123</td>
+                                                            <td>123</td>
                                                             <td> <button type="button" class="btn btn-success"><i class="fa-regular fa-circle-check fa-fade" style="color: #ffffff;"></i> Complete </button></td>
                                                             <td>Member</td>
                                                         </tr>
@@ -379,6 +393,7 @@
                                                             <td>Doe</td>
                                                             <td>jhon@email.com</td>
                                                             <td>USA</td>
+                                                            <td>123</td>
                                                             <td>123</td>
                                                             <td> <button type="button" class="btn btn-success"><i class="fa-regular fa-circle-check fa-fade" style="color: #ffffff;"></i> Complete </button></td>
                                                             <td>Member</td>
@@ -390,8 +405,9 @@
                                                             <td>mark@email.com</td>
                                                             <td>UK</td>
                                                             <td>456</td>
+                                                            <td>123</td>
                                                             <td> <button type="button" class="btn btn-success"><i class="fa-regular fa-circle-check fa-fade" style="color: #ffffff;"></i> Complete </button></td>
-                                                            <td>Member</td>
+                                                            <td>PAid</td>
                                                         </tr>
                                                         <tr>
                                                             <th scope="row">8</th>
@@ -400,8 +416,9 @@
                                                             <td>jacob@email.com</td>
                                                             <td>AU</td>
                                                             <td>789</td>
+                                                            <td>123</td>
                                                             <td> <button type="button" class="btn btn-success"><i class="fa-regular fa-circle-check fa-fade" style="color: #ffffff;"></i> Complete </button></td>
-                                                            <td>789</td>
+                                                            <td>PAyed</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -416,14 +433,13 @@
                                                                 <thead>
                                                                     <tr>
                                                                         <th scope="col">#</th>
-                                                                        <th scope="col"><i class="fa-solid fa-user" style="color: #EB1616;"> 𝑵𝒂𝒎𝒆</i> </th>
-                                                                        <th scope="col"><i class="fa-solid fa-venus" style="color: #EB1616;"> 𝑪𝒍𝒊𝒆𝒏𝒕</i> </th>
-                                                                        <th scope="col"><i class="fa-solid fa-location-dot" style="color: #EB1616;"> 𝙎𝙚𝙧𝙫𝙞𝙘𝙚</i> </th>
-                                                                        <th scope="col"><i class="fa-solid fa-clock" style="color: #EB1616;"> 𝑫𝒂𝒕𝒊𝒏𝒈</i> </th>
-                                                                        <th scope="col"><i class="fa-solid fa-indian-rupee-sign" style="color: #EB1616;"> 𝑨𝒎𝒐𝒖𝒏𝒕</i> </th>
-                                                                        <th scope="col"><i class="fa-brands fa-amazon-pay" style="color: #EB1616;"> 𝑺𝒕𝒂𝒕𝒖𝒔</i> </th>
-                                                                        <th scope="col"><i class="fa-solid fa-bolt" style="color: #EB1616;"> 𝑴𝒆𝒕𝒉𝒐𝒅</i> </th>
-                                                                    </tr>
+                                                                        <th scope="col"><i class="fa-solid fa-calendar-days" style="color: #EB1616;"></i> </th>
+                                                                        <th scope="col"><i class="fa-solid fa-user" style="color: #EB1616;"></i> </th>
+                                                                        <th scope="col"><i class="fa-solid fa-location-dot" style="color: #EB1616;"></i> </th>
+                                                                        <th scope="col"><i class="fa-solid fa-clock" style="color: #EB1616;"></i> </th>
+                                                                        <th scope="col"><i class="fa-solid fa-indian-rupee-sign" style="color: #EB1616;"></i> </th>
+                                                                        <th scope="col"><i class="fa-brands fa-amazon-pay" style="color: #EB1616;"></i> </th>
+                                                                        <th scope="col"><i class="fa-solid fa-bolt" style="color: #EB1616;"></i> </th>
                                                                 </thead>
                                                                 <tbody>
                                                                     <tr>
@@ -648,7 +664,7 @@
 
 
 
-  
+                                                    <button onclick="myFunction()">hjj</button>
 
     <!-- Table End -->
 
@@ -818,6 +834,7 @@
     <script src="js/noti.js"></script>
     <script src="js/JobHistry.js"></script>
     <script src="js/avajobs.js"></script>
+    <script src="js/snackbar.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     
