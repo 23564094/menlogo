@@ -187,6 +187,8 @@
 
 
 
+            <marquee style="font-family:Book Antiqua; color: #FFFFFF" bgcolor="#EB1616" 
+            scrollamount="10">LIVE Update & STATICS </marquee>
 
             <!-- Sale & Revenue Start -->
             <div class="container-fluid pt-4 px-4">
@@ -243,30 +245,40 @@
                     <table class="table">
                         <thead>
                             <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Arjun Reddy</th>
+                                <th scope="col">Package</th>
+                                <th scope="col">Legend</th>
+                            </tr>
+                            <tr>
+                                <th scope="col">Identy</th>
+                                <th scope="col">Verified</th>
+                                <th scope="col">UserID</th>
+                                <th scope="col">Arjun565</th>
+                            </tr>
+                            <tr>
+                                <th scope="col">Join Date</th>
+                                <th scope="col">2Year 4Month ago</th>
+                                <th scope="col">Last Login</th>
+                                <th scope="col">18Sec age</th>
+                            </tr>
+                            <tr>
+                                <th scope="col">Last Done Job</th>
+                                <th scope="col"  id="Lastdonejob"> </th>
+                                <th scope="col">Upcoming Job</th>
+                                <th scope="col" id="upcomingjob"> </th>
+                            </tr>
+                            <tr>
                                 <th scope="col">#</th>
                                 <th scope="col">First Name</th>
                                 <th scope="col">Last Name</th>
                                 <th scope="col">Email</th>
                             </tr>
-                        </thead>
-                        <tbody>
                             <tr>
-                                <th scope="row">1</th>
-                                <td>John</td>
-                                <td>Doe</td>
-                                <td>jhon@email.com</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>mark@email.com</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>jacob@email.com</td>
+                                <th scope="col">#</th>
+                                <th scope="col">First Name</th>
+                                <th scope="col">Last Name</th>
+                                <th scope="col">Email</th>
                             </tr>
                         </tbody>
                     </table>
@@ -275,8 +287,7 @@
                                     <!-- Widgets End -->
                                     <div class="col-sm-12 col-xl-6">
                                         <div class="bg-secondary rounded h-100 p-4">
-                                            <h6 class="mb-4">Review</h6>
-                                            <span>Last 5 Clinet Review</span>
+                                            <h6 class="mb-4"  style="color: #EB1616 ;" id="review"></h6>
                                             <div class="owl-carousel testimonial-carousel">
                                                 <div class="testimonial-item text-center">
                                                     <img class="img-fluid rounded-circle mx-auto mb-4" src="img/testimonial-1.jpg" style="width: 100px; height: 100px;">
@@ -293,7 +304,295 @@
                                             </div>
                                         </div>
                                     </div>
-                                                    <!-- Widget End -->
+          
+                                    <div class="col-12">
+                                        <div class="bg-secondary rounded h-100 p-4">
+                                 <center>        <h6 class="mb-4" class="fa-solid fa-file-alt" style="color: #EB1616;">Available <ion-icon name="trending-up-sharp"></ion-icon> Jobs in Recent!</h6></center>   
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">#</th>
+                                                            <th scope="col"><i class="fa-solid fa-user" style="color: #EB1616;"> 𝑵𝒂𝒎𝒆</i> </th>
+                                                            <th scope="col"><i class="fa-solid fa-venus" style="color: #EB1616;"> 𝑪𝒍𝒊𝒆𝒏𝒕</i> </th>
+                                                            <th scope="col"><i class="fa-solid fa-location-dot" style="color: #EB1616;"> 𝙎𝙚𝙧𝙫𝙞𝙘𝙚</i> </th>
+                                                            <th scope="col"><i class="fa-solid fa-clock" style="color: #EB1616;"> 𝑫𝒂𝒕𝒊𝒏𝒈</i> </th>
+                                                            <th scope="col"><i class="fa-solid fa-indian-rupee-sign" style="color: #EB1616;"> 𝑨𝒎𝒐𝒖𝒏𝒕</i> </th>
+                                                            <th scope="col"><i class="fa-brands fa-amazon-pay" style="color: #EB1616;"> 𝑺𝒕𝒂𝒕𝒖𝒔</i> </th>
+                                                            <th scope="col"><i class="fa-solid fa-bolt" style="color: #EB1616;"> 𝑴𝒆𝒕𝒉𝒐𝒅</i> </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">1</th>
+                                                            <td><p id="up1"></p></td>
+                                                            <td>Doe</td>
+                                                            <td>jhon@email.com</td>
+                                                            <td>USA</td>
+                                                            <td>123</td>
+                                                            <td> <button type="button" class="btn btn-primary"><i class="fa-solid fa-heart fa-shake" style="color: #ffffff;"></i> Job Pending </button></td>
+                                                            <td>Member</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">2</th>
+                                                            <td><p id="up2"></p></td>
+                                                            <td>Doe</td>
+                                                            <td>jhon@email.com</td>
+                                                            <td>USA</td>
+                                                            <td>123</td>
+                                                            <td> <button type="button" class="btn btn-primary"><i class="fa-solid fa-heart fa-shake" style="color: #ffffff;"></i> Job Pending </button></td>
+                                                            <td>Member</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">3</th>
+                                                            <td><p id="up3"></p></td>
+                                                            <td>Doe</td>
+                                                            <td>jhon@email.com</td>
+                                                            <td>USA</td>
+                                                            <td>123</td>
+                                                            <td> <button type="button" class="btn btn-primary"><i class="fa-solid fa-heart fa-shake" style="color: #ffffff;"></i> Job Pending </button></td>
+                                                            <td>Member</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">4</th>
+                                                            <td><p id="up4"></p></td>
+                                                            <td>Doe</td>
+                                                            <td>jhon@email.com</td>
+                                                            <td>USA</td>
+                                                            <td>123</td>
+                                                            <td> <button type="button" class="btn btn-danger"><i class="fa-regular fa-clock fa-spin" style="color: #ffffff;"></i> Review </button></td>
+                                                            <td>Member</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">5</th>
+                                                            <td><p id="up5"></p></td>
+                                                            <td>Doe</td>
+                                                            <td>jhon@email.com</td>
+                                                            <td>USA</td>
+                                                            <td>123</td>
+                                                            <td> <button type="button" class="btn btn-success"><i class="fa-regular fa-circle-check fa-fade" style="color: #ffffff;"></i> Complete </button></td>
+                                                            <td>Member</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">6</th>
+                                                            <td><p id="up6"></p></td>
+                                                            <td>Doe</td>
+                                                            <td>jhon@email.com</td>
+                                                            <td>USA</td>
+                                                            <td>123</td>
+                                                            <td> <button type="button" class="btn btn-success"><i class="fa-regular fa-circle-check fa-fade" style="color: #ffffff;"></i> Complete </button></td>
+                                                            <td>Member</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">7</th>
+                                                            <td><p id="up7"></p></td>
+                                                            <td>Otto</td>
+                                                            <td>mark@email.com</td>
+                                                            <td>UK</td>
+                                                            <td>456</td>
+                                                            <td> <button type="button" class="btn btn-success"><i class="fa-regular fa-circle-check fa-fade" style="color: #ffffff;"></i> Complete </button></td>
+                                                            <td>Member</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">8</th>
+                                                            <td><p id="up8"></p></td>
+                                                            <td>Thornton</td>
+                                                            <td>jacob@email.com</td>
+                                                            <td>AU</td>
+                                                            <td>789</td>
+                                                            <td> <button type="button" class="btn btn-success"><i class="fa-regular fa-circle-check fa-fade" style="color: #ffffff;"></i> Complete </button></td>
+                                                            <td>789</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bg-secondary rounded h-100 p-4">
+                                        <center>             <h6 class="mb-4" class="fa-solid fa-file-alt" style="color: #EB1616;">Job History <ion-icon name="stats-chart"></ion-icon> of Last 30 Days</h6></center>  
+                                                        <div class="table-responsive">
+                                                            <table class="table">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th scope="col">#</th>
+                                                                        <th scope="col"><i class="fa-solid fa-user" style="color: #EB1616;"> 𝑵𝒂𝒎𝒆</i> </th>
+                                                                        <th scope="col"><i class="fa-solid fa-venus" style="color: #EB1616;"> 𝑪𝒍𝒊𝒆𝒏𝒕</i> </th>
+                                                                        <th scope="col"><i class="fa-solid fa-location-dot" style="color: #EB1616;"> 𝙎𝙚𝙧𝙫𝙞𝙘𝙚</i> </th>
+                                                                        <th scope="col"><i class="fa-solid fa-clock" style="color: #EB1616;"> 𝑫𝒂𝒕𝒊𝒏𝒈</i> </th>
+                                                                        <th scope="col"><i class="fa-solid fa-indian-rupee-sign" style="color: #EB1616;"> 𝑨𝒎𝒐𝒖𝒏𝒕</i> </th>
+                                                                        <th scope="col"><i class="fa-brands fa-amazon-pay" style="color: #EB1616;"> 𝑺𝒕𝒂𝒕𝒖𝒔</i> </th>
+                                                                        <th scope="col"><i class="fa-solid fa-bolt" style="color: #EB1616;"> 𝑴𝒆𝒕𝒉𝒐𝒅</i> </th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th scope="row">1</th>
+                                                                       <td><p id="over1"></p></td>
+                                                                        <td>jhon@email.com</td>
+                                                                        <td>USA</td>
+                                                                        <td>123</td>
+                                                                        <td>123</td>
+                                                                        <td> <button type="button" class="btn btn-success"><i class="fa-regular fa-circle-check fa-fade" style="color: #ffffff;"></i> Complete </button></td>
+                                                                        <td>Member</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">2</th>
+                                                                        <td><p id="over2"></p></td>
+                                                                        <td>Otto</td>
+                                                                        <td>mark@email.com</td>
+                                                                        <td>UK</td>
+                                                                        <td>456</td>
+                                                                        <td> <button type="button" class="btn btn-success"><i class="fa-regular fa-circle-check fa-fade" style="color: #ffffff;"></i> Complete </button></td>
+                                                                        <td>Member</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">3</th>
+                                                                        <td><p id="over3"></p></td>
+                                                                        <td>Thornton</td>
+                                                                        <td>jacob@email.com</td>
+                                                                        <td>AU</td>
+                                                                        <td>789</td>
+                                                                        <td> <button type="button" class="btn btn-success"><i class="fa-regular fa-circle-check fa-fade" style="color: #ffffff;"></i> Complete </button></td>
+                                                                        <td>Member</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">4</th>
+                                                                        <td><p id="over4"></p></td>
+                                                                        <td>Otto</td>
+                                                                        <td>mark@email.com</td>
+                                                                        <td>UK</td>
+                                                                        <td>456</td>
+                                                                        <td> <button type="button" class="btn btn-success"><i class="fa-regular fa-circle-check fa-fade" style="color: #ffffff;"></i> Complete </button></td>
+                                                                        <td>Member</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">5</th>
+                                                                        <td><p id="over5"></p></td>
+                                                                        <td>Otto</td>
+                                                                        <td>mark@email.com</td>
+                                                                        <td>UK</td>
+                                                                        <td>456</td>
+                                                                        <td> <button type="button" class="btn btn-success"><i class="fa-regular fa-circle-check fa-fade" style="color: #ffffff;"></i> Complete </button></td>
+                                                                        <td>Member</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">6</th>
+                                                                        <td><p id="over6"></p></td>
+                                                                        <td>Otto</td>
+                                                                        <td>mark@email.com</td>
+                                                                        <td>UK</td>
+                                                                        <td>456</td>
+                                                                        <td> <button type="button" class="btn btn-success"><i class="fa-regular fa-circle-check fa-fade" style="color: #ffffff;"></i> Complete </button></td>
+                                                                        <td>Member</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">7</th>
+                                                                        <td><p id="over7"></p></td>
+                                                                        <td>Otto</td>
+                                                                        <td>mark@email.com</td>
+                                                                        <td>UK</td>
+                                                                        <td>456</td>
+                                                                        <td> <button type="button" class="btn btn-success"><i class="fa-regular fa-circle-check fa-fade" style="color: #ffffff;"></i> Complete </button></td>
+                                                                        <td>Member</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">8</th>
+                                                                        <td><p id="over8"></p></td>
+                                                                        <td>Otto</td>
+                                                                        <td>mark@email.com</td>
+                                                                        <td>UK</td>
+                                                                        <td>456</td>
+                                                                        <td> <button type="button" class="btn btn-success"><i class="fa-regular fa-circle-check fa-fade" style="color: #ffffff;"></i> Complete </button></td>
+                                                                        <td>Member</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">9</th>
+                                                                        <td><p id="over9"></p></td>
+                                                                        <td>Otto</td>
+                                                                        <td>mark@email.com</td>
+                                                                        <td>UK</td>
+                                                                        <td>456</td>
+                                                                        <td> <button type="button" class="btn btn-success"><i class="fa-regular fa-circle-check fa-fade" style="color: #ffffff;"></i> Complete </button></td>
+                                                                        <td>Member</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">10</th>
+                                                                        <td><p id="over10"></p></td>
+                                                                        <td>Otto</td>
+                                                                        <td>mark@email.com</td>
+                                                                        <td>UK</td>
+                                                                        <td>456</td>
+                                                                        <td> <button type="button" class="btn btn-success"><i class="fa-regular fa-circle-check fa-fade" style="color: #ffffff;"></i> Complete </button></td>
+                                                                        <td>Member</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">11</th>
+                                                                        <td><p id="over11"></p></td>
+                                                                        <td>Otto</td>
+                                                                        <td>mark@email.com</td>
+                                                                        <td>UK</td>
+                                                                        <td>456</td>
+                                                                        <td> <button type="button" class="btn btn-success"><i class="fa-regular fa-circle-check fa-fade" style="color: #ffffff;"></i> Complete </button></td>
+                                                                        <td>Member</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">12</th>
+                                                                        <td><p id="over12"></p></td>
+                                                                        <td>Otto</td>
+                                                                        <td>mark@email.com</td>
+                                                                        <td>UK</td>
+                                                                        <td>456</td>
+                                                                        <td> <button type="button" class="btn btn-success"><i class="fa-regular fa-circle-check fa-fade" style="color: #ffffff;"></i> Complete </button></td>
+                                                                        <td>Member</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">13</th>
+                                                                        <td><p id="over13"></p></td>
+                                                                        <td>Otto</td>
+                                                                        <td>mark@email.com</td>
+                                                                        <td>UK</td>
+                                                                        <td>456</td>
+                                                                        <td> <button type="button" class="btn btn-success"><i class="fa-regular fa-circle-check fa-fade" style="color: #ffffff;"></i> Complete </button></td>
+                                                                        <td>Member</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">14</th>
+                                                                        <td><p id="over14"></p></td>
+                                                                        <td>Otto</td>
+                                                                        <td>mark@email.com</td>
+                                                                        <td>UK</td>
+                                                                        <td>456</td>
+                                                                        <td> <button type="button" class="btn btn-success"><i class="fa-regular fa-circle-check fa-fade" style="color: #ffffff;"></i> Complete </button></td>
+                                                                        <td>Member</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">15</th>
+                                                                        <td><p id="over15"></p></td>
+                                                                        <td>Otto</td>
+                                                                        <td>mark@email.com</td>
+                                                                        <td>UK</td>
+                                                                        <td>456</td>
+                                                                        <td> <button type="button" class="btn btn-success"><i class="fa-regular fa-circle-check fa-fade" style="color: #ffffff;"></i> Complete </button></td>
+                                                                        <td>Member</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+
+                                    <div class="col-sm-12 col-xl-6">
+                                        <div class="bg-secondary rounded h-100 p-4">
+                                            <h6 class="mb-4"></h6>
+                                            <div class="pg-bar mb-3">
+                                                <div class="progres">
+                                                    <iframe data-tally-src="https://tally.so/embed/mBp7p1?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="474" frameborder="0" marginheight="0" marginwidth="0" title="Contact From Dashboard"></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+          
+                                    <!-- Widget End -->
                                                     <div class="col-sm-12 col-xl-6">
                                                         <div class="bg-secondary rounded h-100 p-4">
                                                             <h6 class="mb-4">Flush Accordion</h6>
@@ -346,140 +645,11 @@
                                                             </div>
                                                         </div>
                                                     </div>                                    
-            <div class="col-sm-12 col-xl-6">
-                <div class="bg-secondary rounded h-100 p-4">
-                    <h6 class="mb-4">Progress Bar</h6>
-                    <div class="pg-bar mb-3">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="pg-bar mb-3">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="pg-bar mb-3">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="pg-bar mb-3">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="pg-bar mb-0">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
 
-            <div class="col-12">
-                <div class="bg-secondary rounded h-100 p-4">
-                    <h6 class="mb-4"  style="color: #EB1616 ;" id="available"></h6>
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">First Name</th>
-                                    <th scope="col">Last Name</th>
-                                    <th scope="col">Email</th>
-                                    <th scope="col">Country</th>
-                                    <th scope="col">ZIP</th>
-                                    <th scope="col">Status</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td><p id="dateone"></p></td>
-                                    <td>Doe</td>
-                                    <td>jhon@email.com</td>
-                                    <td>USA</td>
-                                    <td>123</td>
-                                    <td>Member</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>mark@email.com</td>
-                                    <td>UK</td>
-                                    <td>456</td>
-                                    <td>Member</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>jacob@email.com</td>
-                                    <td>AU</td>
-                                    <td>789</td>
-                                    <td>Member</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="bg-secondary rounded h-100 p-4">
-                    <h6 class="mb-4"  style="color: #EB1616;" id="nextmonth"></h6>
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Client</th>
-                                    <th scope="col">Service Address</th>
-                                    <th scope="col">Dating time</th>
-                                    <th scope="col">Amount</th>
-                                    <th scope="col">Payment Status</th>
-                                    <th scope="col">Method</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td><p id="dateone"></p></td>
-                                    <td>Doe</td>
-                                    <td>jhon@email.com</td>
-                                    <td>USA</td>
-                                    <td>123</td>
-                                    <td>123</td>
-                                    <td>Member</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>mark@email.com</td>
-                                    <td>UK</td>
-                                    <td>456</td>
-                                    <td>Member</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>jacob@email.com</td>
-                                    <td>AU</td>
-                                    <td>789</td>
-                                    <td>Member</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+  
+
     <!-- Table End -->
 
 
@@ -491,44 +661,44 @@
                     <div class="col-sm-12 col-md-6 col-xl-4">
                         <div class="h-100 bg-secondary rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-2">
-                                <h6 class="mb-0">Messages</h6>
+                                <h6 class="mb-0">Notification</h6>
                                 <a href="">Show All</a>
                             </div>
                             <div class="d-flex align-items-center border-bottom py-3">
-                                <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                                <img class="rounded-circle flex-shrink-0" src="img/systemok.png" alt="" style="width: 40px; height: 40px;">
                                 <div class="w-100 ms-3">
                                     <div class="d-flex w-100 justify-content-between">
-                                        <h6 class="mb-0">Jhon Doe</h6>
+                                        <h6 class="mb-0">System</h6>
                                         <small>15 minutes ago</small>
                                     </div>
                                     <span>Short message goes here...</span>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center border-bottom py-3">
-                                <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                                <img class="rounded-circle flex-shrink-0" src="img/systemok.png" alt="" style="width: 40px; height: 40px;">
                                 <div class="w-100 ms-3">
                                     <div class="d-flex w-100 justify-content-between">
-                                        <h6 class="mb-0">Jhon Doe</h6>
+                                        <h6 class="mb-0">System</h6>
                                         <small>15 minutes ago</small>
                                     </div>
                                     <span>Short message goes here...</span>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center border-bottom py-3">
-                                <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                                <img class="rounded-circle flex-shrink-0" src="img/system.png" alt="" style="width: 40px; height: 40px;">
                                 <div class="w-100 ms-3">
                                     <div class="d-flex w-100 justify-content-between">
-                                        <h6 class="mb-0">Jhon Doe</h6>
+                                        <h6 class="mb-0">System</h6>
                                         <small>15 minutes ago</small>
                                     </div>
                                     <span>Short message goes here...</span>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center pt-3">
-                                <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                                <img class="rounded-circle flex-shrink-0" src="img/systemok.png" alt="" style="width: 40px; height: 40px;">
                                 <div class="w-100 ms-3">
                                     <div class="d-flex w-100 justify-content-between">
-                                        <h6 class="mb-0">Jhon Doe</h6>
+                                        <h6 class="mb-0">System</h6>
                                         <small>15 minutes ago</small>
                                     </div>
                                     <span>Short message goes here...</span>
@@ -616,12 +786,11 @@
                 <div class="bg-secondary rounded-top p-4">
                     <div class="row">
                         <div class="col-12 col-sm-6 text-center text-sm-start">
-                            &copy; <a href="#">Your Site Name</a>, All Right Reserved. 
+                            &copy; <a href="index.html">Playboys Pvt LTD</a>, All Right Reserved. 
                         </div>
                         <div class="col-12 col-sm-6 text-center text-sm-end">
                             <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                            Designed By <a href="https://htmlcodex.com">HTML Codex</a>
-                            <br>Distributed By: <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                            Contact <a href="https://t.me/indiTeam">Support Team</a>
                         </div>
                     </div>
                 </div>
@@ -647,12 +816,15 @@
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
     <script src="js/Button.js"></script>
     <script src="js/noti.js"></script>
-    <script src="js/DatesForJob.js"></script>
     <script src="js/JobHistry.js"></script>
+    <script src="js/avajobs.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     
     <script src="https://kit.fontawesome.com/d5ed6967fa.js" crossorigin="anonymous"></script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
 
-</html>
+
+        </html>
