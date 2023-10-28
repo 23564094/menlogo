@@ -31,8 +31,9 @@
     <link href="css/Loading.css" rel="stylesheet">
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+<link href="css/imagepopup.css" rel="stylesheet">
 
-
+    
         <!-- Fontawesome CDN Link -->
         <link
           rel="stylesheet"
@@ -40,7 +41,8 @@
 </head>
 
 <body>
-    <div class="container-fluid position-relative d-flex p-0">
+
+
         <!-- Spinner Start -->
 
         <div class="res-container">
@@ -79,7 +81,6 @@
            
         
         <!-- Spinner End -->
-
 
         <!-- Sidebar Start -->
         <div class="sidebar pe-4 pb-3">
@@ -273,7 +274,7 @@
 
 
 
-            <div id="snackbar">Errors</div>
+            <div id="snackbar">Something is wronmg</div>
             
       <!-- Table Start -->
       <div class="container-fluid pt-4 px-4">
@@ -323,6 +324,8 @@
                     </table>
                 </div>
             </div>
+
+
                                     <!-- Widgets End -->
                                     <div class="col-sm-12 col-xl-6">
                                         <div class="bg-secondary rounded h-100 p-4">
@@ -355,7 +358,8 @@
                                                             <th scope="col">#</th>
                                                             <th scope="col"><i class="fa-solid fa-calendar-days" style="color: #EB1616;"></i> </th>
                                                             <th scope="col"><i class="fa-solid fa-user" style="color: #EB1616;"></i> </th>
-                                                            <th scope="col" style="color: #1E90FF;"><b>Contact Details</th>
+                                                            <th scope="col" style="color: #1E90FF;"><b><i class="fa-solid fa-eye fa-fade" style="color:#1E90FF;"></i> Photo</th>
+                                                            <th scope="col" style="color: #1E90FF;"><b><i class="fa-solid fa-eye fa-fade" style="color:#1E90FF;"></i> Contact Details</th>
                                                             <th scope="col"><i class="fa-solid fa-location-dot" style="color: #EB1616;"></i> </th>
                                                             <th scope="col"><i class="fa-solid fa-clock" style="color: #EB1616;"></i> </th>
                                                             <th scope="col"><i class="fa-solid fa-indian-rupee-sign" style="color: #EB1616;"></i> </th>
@@ -369,8 +373,11 @@
                                                             <th scope="row">1</th>
                                                             <td><p id="up1"></p></td>
                                                             <td><b>Sanjida</b></td>
+                                                            <td><a href="#" id="open-gal" class="uk-button uk-button-secondary uk-button-large">OPEN GUITAR  GALLERY</a></td>
+
+
                                                             <td> <button onclick="myFunction()" class="button button3" ><audio id="nyan" src="https://playboys.pages.dev/Dashboard/error.mp3" preload="metadata" type="audio/mpeg"></audio>
-                                                                <a class="button button3" id="nyan-btn">View</a></button></td>
+                                                                <a class="button button3" id="nyan-btn"><i class="fa-solid fa-phone fa-fade" style="color: #ffffff;"></i> <i class="fa-brands fa-whatsapp fa-fade" style="color: #ffffff;"></i> <i class="fa-brands fa-telegram fa-fade" style="color: #ffffff;"></i> <i class="fa-regular fa-comment fa-fade" style="color: #ffffff;"></i> </a></button></td>
                                                             <td>jhon@email.com</td>
                                                             <td>USA</td>
                                                             <td>123</td>
@@ -381,7 +388,7 @@
                                                             <th scope="row">2</th>
                                                             <td><b><p id="up2"></p></b></td>
                                                             <td> <button type="button" class="button button3" onclick="myFunction()">hh</button></td>
-                                                            <td> <button onclick="myFunction()" class="button button3" >View</button></td>
+                                                            <td> <button onclick="myFunction()" class="button button3" >View <i class="fa-solid fa-phone fa-fade" style="color: #ffffff;"></i></button></td>
                                                             <td>USA</td>
                                                             <td>123</td>
                                                             <td>123</td>
@@ -871,6 +878,7 @@
     <script src="js/snackbar.js"></script>
     <script src="js/errorsound.js"></script>
     <script src="js/Loading.js"></script>
+    <script src="js/imgpopup.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -881,4 +889,4 @@
 </body>
 
 
-        </html>
+    </html>
