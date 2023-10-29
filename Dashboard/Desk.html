@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/favicon.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -134,7 +134,6 @@
             <!-- Navbar Start -->
             <nav class="navbar navbar-expand bg-secondary navbar-dark sticky-top px-4 py-0">
                 <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
-                    <h2 class="text-primary mb-0"><i class="fa fa-user-edit"></i></h2>
                 </a>
                 <a href="#" class="sidebar-toggler flex-shrink-0">
                     <i class="fa fa-bars"></i>
@@ -145,62 +144,23 @@
                 <div class="navbar-nav align-items-center ms-auto">
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <i class="fa fa-envelope me-lg-2"></i>
-                            <span class="d-none d-lg-inline-flex">Message</span>
+                            <i class="fa-regular fa-bell fa-shake" style="color: #ff1111;" ></i>
+                            <span class="d-none d-lg-inline-flex">Notification</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
                             <a href="#" class="dropdown-item">
-                                <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                                    <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                </div>
+                                <h6 class="fw-normal mb-0"><i class="fa-solid fa-circle-info" style="color: #33e320;"></i> Aashvi Chopra Sent You.....</button></h6>
+                                <small><i class="fa-regular fa-clock fa-spin-pulse" style="color: #ffffff;"></i> 15 minutes ago</small>
                             </a>
                             <hr class="dropdown-divider">
                             <a href="#" class="dropdown-item">
-                                <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                                    <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                </div>
+                                <h6 class="fw-normal mb-0"><i class="fa-solid fa-circle-info" style="color: #33e320;"></i> Saanvi Dey 12,300Rs Paym....</h6>
+                                <small><i class="fa-regular fa-clock fa-spin-pulse" style="color: #ffffff;"></i> 57 minutes ago</small>
                             </a>
                             <hr class="dropdown-divider">
                             <a href="#" class="dropdown-item">
-                                <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                                    <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                </div>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item text-center">See all message</a>
-                        </div>
-                    </div>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <i class="fa fa-bell me-lg-2"></i>
-                            <span class="d-none d-lg-inline-flex">Notificatin</span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item">
-                                <h6 class="fw-normal mb-0">Profile updated</h6>
-                                <small>15 minutes ago</small>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <h6 class="fw-normal mb-0">New user added</h6>
-                                <small>15 minutes ago</small>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <h6 class="fw-normal mb-0">Password changed</h6>
-                                <small>15 minutes ago</small>
+                                <h6 class="fw-normal mb-0"><i class="fa-solid fa-circle-info" style="color: #ff0404;"></i> Meeting ID 2726 received.....</h6>
+                                <small><i class="fa-regular fa-clock fa-spin-pulse" style="color: #ffffff;"></i> 08 Hours ago</small>
                             </a>
                             <hr class="dropdown-divider">
                             <a href="#" class="dropdown-item text-center">See all notifications</a>
@@ -212,10 +172,10 @@
                             <span class="d-none d-lg-inline-flex">Arjun Reddy</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
-                            <a a href="#" onclick="Alert.error('You Are Currently on Demo Dashboard,<br>You have Buy Premium Membership,<br>Please Contact Telegram @IndiTeam ','Something is wrong!',{displayDuration: 5000})">   <i class="fa-solid fa-user-pen" style="color: #ffffff;"></i> Edit Profile</a> <br> <br>
-                            <a href="#" onclick="Alert.error('You Are Currently on Demo Dashboard,<br>You have Buy Premium Membership,<br>Please Contact Telegram @IndiTeam ','Something is wrong!',{displayDuration: 5000})">   <i class="fa-solid fa-sliders" style="color: #ffffff;"></i> Settings</a><br> <br>
-                            <a  href="https://playboys.pages.dev/" onclick="Alert.success('Hi there Account Logout Success. ','Log out Success',{displayDuration: 3000, pos: 'top'})">   <i class="fa-solid fa-right-from-bracket" style="color: #ffffff;"></i> LogOut!</a><br> <br>
-                            <a  href="https://t.me/inditeam" onclick="Alert.success('Hi there We Are connecting to <br> Support Team. ','Connecting Success',{displayDuration: 3000, pos: 'top'})">   <i class="fa-brands fa-telegram" style="color: #ffffff;"></i> Contact Support</a><br> <br>
+                            <a a href="#" button onclick="myFunction()"></button>  <i class="fa-solid fa-user-pen" style="color: #ffffff;"></i> Edit Profile</a> <br> <br>
+                            <a href="#" button onclick="myFunction()"></button>  <i class="fa-solid fa-sliders" style="color: #ffffff;"></i> Settings</a><br> <br>
+                            <a  href="https://playboys.pages.dev/" button onclick="myFunction()"></button>   <i class="fa-solid fa-right-from-bracket" style="color: #ffffff;"></i> LogOut!</a><br> <br>
+                            <a  href="https://t.me/inditeam" button onclick="myFunction()"></button>   <i class="fa-brands fa-telegram" style="color: #ffffff;"></i> Contact Support</a><br> <br>
                         </div>
                     </div>
                 </div>
@@ -274,7 +234,8 @@
 
 
 
-            <div id="snackbar">Something is wronmg</div>
+            <div id="snackbar">Sorry,<br><br> You are not allowed because you are using a demo account, <br>please register to view your account dashboard, <br>
+                talk to customer care for details, thanks for understanding</div>
             
       <!-- Table Start -->
       <div class="container-fluid pt-4 px-4">
@@ -348,15 +309,33 @@
                                             <center><h6 class="mb-4"  style="color: #EB1616 ;" id="review"></h6></center>
                                             <div class="owl-carousel testimonial-carousel">
                                                 <div class="testimonial-item text-center">
-                                                    <img class="img-fluid rounded-circle mx-auto mb-4" src="img/testimonial-1.jpg" style="width: 100px; height: 100px;">
+                                                    <img class="img-fluid rounded-circle mx-auto mb-4" src="img/Feedback/1.png" style="width: 70px; height: 70px;">
                                                     <h5 class="mb-1">Client Name</h5>
-                                                    <p>Profession</p>
+                                                    <p class="mb-0">My husband is very ill, <br>
+                                                        he could not survive for more than two minutes when we were intimate, <br>
+                                                         in many ways we saw many advanced doctors but did not get any benefit,<br>
+                                                          then forced to contact @inditeam, I had no other option in my hand, <br>
+                                                          on the other hand I could not leave my husband, God did not lack our money. <br>
+                                                           Now i have everything</p>
+                                                </div>
+                                                <div class="testimonial-item text-center">
+                                                    <img class="img-fluid rounded-circle mx-auto mb-4" src="img/Feedback/2.png" style="width: 70px; height: 70px;">
+                                                    <h5 class="mb-1">Client Name</h5>
                                                     <p class="mb-0">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
                                                 </div>
                                                 <div class="testimonial-item text-center">
-                                                    <img class="img-fluid rounded-circle mx-auto mb-4" src="img/testimonial-2.jpg" style="width: 100px; height: 100px;">
+                                                    <img class="img-fluid rounded-circle mx-auto mb-4" src="img/Feedback/3.png" style="width: 70px; height: 70px;">
                                                     <h5 class="mb-1">Client Name</h5>
-                                                    <p>Profession</p>
+                                                    <p class="mb-0">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                                                </div>
+                                                <div class="testimonial-item text-center">
+                                                    <img class="img-fluid rounded-circle mx-auto mb-4" src="img/Feedback/4.png" style="width: 70px; height: 70px;">
+                                                    <h5 class="mb-1">Client Name</h5>
+                                                    <p class="mb-0">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                                                </div>
+                                                <div class="testimonial-item text-center">
+                                                    <img class="img-fluid rounded-circle mx-auto mb-4" src="img/Feedback/5.png" style="width: 70px; height: 70px;">
+                                                    <h5 class="mb-1">Client Name</h5>
                                                     <p class="mb-0">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
                                                 </div>
                                             </div>
@@ -711,35 +690,23 @@
                                     <!-- Widget End -->
                                                     <div class="col-sm-12 col-xl-6">
                                                         <div class="bg-secondary rounded h-100 p-4">
-                                                            <h6 class="mb-4">Flush Accordion</h6>
+                                                            <h6 class="mb-4">F A Q !</h6>
                                                             <div class="accordion accordion-flush" id="accordionFlushExample">
                                                                 <div class="accordion-item bg-transparent">
                                                                     <h2 class="accordion-header" id="flush-headingOne">
                                                                         <button class="accordion-button" type="button"
                                                                             data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
                                                                             aria-expanded="true" aria-controls="flush-collapseOne">
-                                                                            Accordion Item #1
+                                                                            Why can't I see any information on this dashboard?
                                                                         </button>
                                                                     </h2>
                                                                     <div id="flush-collapseOne" class="accordion-collapse collapse show"
                                                                         aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                                                         <div class="accordion-body">
-                                                                            Lorem et ea ea consetetur voluptua duo et aliquyam sanctus sit. Et dolore at erat amet et diam labore lorem dolores. Erat amet stet at dolore dolor ea invidunt, justo nonumy justo takimata magna. Stet lorem vero sed eos justo diam dolores, dolor sit takimata et voluptua aliquyam gubergren tempor.
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="accordion-item bg-transparent">
-                                                                    <h2 class="accordion-header" id="flush-headingTwo">
-                                                                        <button class="accordion-button collapsed" type="button"
-                                                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
-                                                                            aria-expanded="false" aria-controls="flush-collapseTwo">
-                                                                            Accordion Item #2
-                                                                        </button>
-                                                                    </h2>
-                                                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                                                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                                                        <div class="accordion-body">
-                                                                            Sea diam dolore aliquyam aliquyam diam et consetetur et. Accusam amet no invidunt invidunt et consetetur, magna ut nonumy kasd erat tempor dolor et. Diam magna dolor sed amet duo dolores magna vero. Amet sit sadipscing ea diam clita lorem sit. Vero et et et tempor diam. Ipsum eirmod sit.
+                                                                            Sorry, <br>
+                                                                            you are not allowed because you are using a demo account,<br>
+                                                                             please register to view your account dashboard,<br>
+                                                                              talk to customer care for details, thanks for understanding
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -748,14 +715,113 @@
                                                                         <button class="accordion-button collapsed" type="button"
                                                                             data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
                                                                             aria-expanded="false" aria-controls="flush-collapseThree">
-                                                                            Accordion Item #3
+                                                                            Why do I have to register?
                                                                         </button>
                                                                     </h2>
                                                                     <div id="flush-collapseThree" class="accordion-collapse collapse"
                                                                         aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                                                                         <div class="accordion-body">
-                                                                            Sea sea sit sanctus magna gubergren kasd, magna justo ea lorem lorem. Elitr aliquyam ipsum clita consetetur duo at nonumy invidunt, invidunt eos dolore vero sit amet amet magna tempor clita, takimata diam justo stet erat et vero erat. Sit ipsum eirmod sea ut vero dolores sea clita nonumy, no.
-                                                                        </div>
+                                                                            If you do not register then you will not be able to receive our services in any way,
+                                                                            <br> to get all our services you must register it is mandatory.                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="accordion-item bg-transparent">
+                                                                    <h2 class="accordion-header" id="flush-headingFour">
+                                                                        <button class="accordion-button collapsed" type="button"
+                                                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                                                            aria-expanded="false" aria-controls="flush-collapseFour">
+                                                                            How to complete the registration?
+                                                                        </button>
+                                                                    </h2>
+                                                                    <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                                                        aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                                                        <div class="accordion-body">
+                                                                            If you want you can complete the registration from our registration page,<br>
+                                                                             and if you don't understand how to complete the registration,<br>
+                                                                              there is a tutorial video, or you can contact our customer care.                                                                    </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="accordion-item bg-transparent">
+                                                                    <h2 class="accordion-header" id="flush-headingFIVE">
+                                                                        <button class="accordion-button collapsed" type="button"
+                                                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFIVE"
+                                                                            aria-expanded="false" aria-controls="flush-collapseThree">
+                                                                            Prove that You're Company is not Scammer?
+                                                                        </button>
+                                                                    </h2>
+                                                                    <div id="flush-collapseFIVE" class="accordion-collapse collapse"
+                                                                        aria-labelledby="flush-headingFIVE" data-bs-parent="#accordionFlushExample">
+                                                                        <div class="accordion-body">
+                                                                            Our company has been serving target Indians with respect for the last five years,<br>
+                                                                             we believe that faith is far from over, i will not buy the city of Mumbai with a little money,<br>
+                                                                              in fact if you take a service from us, you will not hesitate to take your decision next time.<br>
+                                                                               For any more information, message us on Telegram, hopefully from others, we can promise that you will get the best service                                                                 </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="accordion-item bg-transparent">
+                                                                    <h2 class="accordion-header" id="flush-headingSix">
+                                                                        <button class="accordion-button collapsed" type="button"
+                                                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseSix"
+                                                                            aria-expanded="false" aria-controls="flush-collapseSix">
+                                                                            Why do you have to make advance payments to receive the service for the first time?
+                                                                        </button>
+                                                                    </h2>
+                                                                    <div id="flush-collapseSix" class="accordion-collapse collapse"
+                                                                        aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                                                                        <div class="accordion-body">
+                                                                            We did not have such a rule at first, but we were forced to make such a rule for the year,<br>
+                                                                             there are many customers who do not accept appointments according to the date,<br>
+                                                                              this causes a huge loss to our organization, because we send their partner to the hotel or guest house according to the appointment date, <br>
+                                                                              but the appointment does not have to be in the specific place, the loss has to be saved. That’s why such a system had to be introduced                                                                  </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="accordion-item bg-transparent">
+                                                                    <h2 class="accordion-header" id="flush-headingSeven">
+                                                                        <button class="accordion-button collapsed" type="button"
+                                                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven"
+                                                                            aria-expanded="false" aria-controls="flush-collapseSeven">
+                                                                            Do i have to make advance payments again to get the service Next time?
+                                                                        </button>
+                                                                    </h2>
+                                                                    <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                                                                        aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                                                                        <div class="accordion-body">
+                                                                            Of course not, because a verified profile of you will be created on our system,<br>
+                                                                             you will not have to make any advance payment in the next time you take any services,<br> 
+                                                                             hopefully you understand                                                                      </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="accordion-item bg-transparent">
+                                                                    <h2 class="accordion-header" id="flush-headingEight">
+                                                                        <button class="accordion-button collapsed" type="button"
+                                                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseEight"
+                                                                            aria-expanded="false" aria-controls="flush-collapseEight">
+                                                                            Is there any registration fee to be paid?
+                                                                        </button>
+                                                                    </h2>
+                                                                    <div id="flush-collapseEight" class="accordion-collapse collapse"
+                                                                        aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                                                                        <div class="accordion-body">
+                                                                            Yes, <br> it depends on which package you take as the price is fixed in our package list,                                                            </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="accordion-item bg-transparent">
+                                                                    <h2 class="accordion-header" id="flush-headingNine">
+                                                                        <button class="accordion-button collapsed" type="button"
+                                                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseNine"
+                                                                            aria-expanded="false" aria-controls="flush-collapseNine">
+                                                                            Why Join Us? 
+                                                                        </button>
+                                                                    </h2>
+                                                                    <div id="flush-collapseNine" class="accordion-collapse collapse"
+                                                                        aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+                                                                        <div class="accordion-body">
+                                                                            There Are Dozens Of Reasons To Justify Why Our website Is The Best. <br>
+                                                                            With More Than 24 Years In The Call Boy Industry, We Have Our Branches In About 80 Cities In India.<br>
+                                                                            Having About 93523 Active Call Boy, We Have Served More Than 70000 Customers. <br>
+                                                                            These Figures Are Enough To Tell You That Our website Is One Of The Biggest Call Boy Clubs In India.<br>
+                                                                             We Operate With Full Secrecy And We Adhere To Our Privacy Policy.<br>
+                                                                              We Do Not Share Information About Our Call Boy Or Female Clients With Any Third-Party At Any Cost. Unlike Others FAQ .                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -764,7 +830,6 @@
 
 
 
-                                                    <button onclick="myFunction()">hjj</button>
 
     <!-- Table End -->
 
@@ -778,16 +843,16 @@
                         <div class="h-100 bg-secondary rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-2">
                                 <h6 class="mb-0">Notification</h6>
-                                <a href="">Show All</a>
+                                <a href="#"button onclick="myFunction()"><i class="fa-solid fa-circle-dot fa-beat-fade" style="color: #52de29;"></i> <i class="fa-solid fa-bell fa-shake" style="color: #f90000;"></i>New Notificatin</a>
                             </div>
                             <div class="d-flex align-items-center border-bottom py-3">
                                 <img class="rounded-circle flex-shrink-0" src="img/systemok.png" alt="" style="width: 40px; height: 40px;">
                                 <div class="w-100 ms-3">
                                     <div class="d-flex w-100 justify-content-between">
                                         <h6 class="mb-0">System</h6>
-                                        <small>15 minutes ago</small>
+                                        <small><i class="fa-regular fa-clock fa-spin-pulse" style="color: #ffffff;"></i> 15 minutes ago</small>
                                     </div>
-                                    <span>Short message goes here...</span>
+                                    <span>Aashvi Chopra Sent You meeting Request For 4,000Rs...</span>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center border-bottom py-3">
@@ -795,9 +860,9 @@
                                 <div class="w-100 ms-3">
                                     <div class="d-flex w-100 justify-content-between">
                                         <h6 class="mb-0">System</h6>
-                                        <small>15 minutes ago</small>
+                                        <small><i class="fa-regular fa-clock fa-spin-pulse" style="color: #ffffff;"></i> 57 minutes ago</small>
                                     </div>
-                                    <span>Short message goes here...</span>
+                                    <span>Saanvi Dey 12,300Rs Payment is Under Review.............</span>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center border-bottom py-3">
@@ -805,9 +870,9 @@
                                 <div class="w-100 ms-3">
                                     <div class="d-flex w-100 justify-content-between">
                                         <h6 class="mb-0">System</h6>
-                                        <small>15 minutes ago</small>
+                                        <small><i class="fa-regular fa-clock fa-spin-pulse" style="color: #ffffff;"></i> 08 Hours ago</small>
                                     </div>
-                                    <span>Short message goes here...</span>
+                                    <span>Meeting ID 2726 received a complaint of extra tips, authorities are investigating & Payment has been Under Review....</span>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center pt-3">
@@ -815,9 +880,9 @@
                                 <div class="w-100 ms-3">
                                     <div class="d-flex w-100 justify-content-between">
                                         <h6 class="mb-0">System</h6>
-                                        <small>15 minutes ago</small>
+                                        <small><i class="fa-regular fa-clock fa-spin-pulse" style="color: #ffffff;"></i> 2Day Ago</small>
                                     </div>
-                                    <span>Short message goes here...</span>
+                                    <span>Sarika Gadhavi 7,800Rs Payment Complete Via Cash...</span>
                                 </div>
                             </div>
                         </div>
@@ -826,7 +891,7 @@
                         <div class="h-100 bg-secondary rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
                                 <h6 class="mb-0">Calender</h6>
-                                <a href="">Show All</a>
+                                <a href="#"button onclick="myFunction()"><i class="fa-solid fa-calendar-days" style="color: #f90000;"></i> Check appointment Schedule</a>
                             </div>
                             <div id="calender"></div>
                         </div>
@@ -835,17 +900,17 @@
                         <div class="h-100 bg-secondary rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
                                 <h6 class="mb-0">To Do List</h6>
-                                <a href="">Show All</a>
+                                <a href="#"button onclick="myFunction()"><i class="fa-brands fa-stack-exchange" style="color: #ff1717;"></i> View all Task List</a>
                             </div>
                             <div class="d-flex mb-2">
-                                <input class="form-control bg-dark border-0" type="text" placeholder="Enter task">
-                                <button type="button" class="btn btn-primary ms-2">Add</button>
+                                <input class="form-control bg-dark border-0" type="text" placeholder="Reminder System">
+                                <button type="button" class="btn btn-primary ms-2" button onclick="myFunction()">Create appointment</button>
                             </div>
                             <div class="d-flex align-items-center border-bottom py-2">
                                 <input class="form-check-input m-0" type="checkbox">
                                 <div class="w-100 ms-3">
                                     <div class="d-flex w-100 align-items-center justify-content-between">
-                                        <span>Short task goes here...</span>
+                                 <span> Aashvi Madam ke sath  3Ghante Tarikh ko Metting Hay,subha yard karna...</span>
                                         <button class="btn btn-sm"><i class="fa fa-times"></i></button>
                                     </div>
                                 </div>
@@ -854,7 +919,16 @@
                                 <input class="form-check-input m-0" type="checkbox">
                                 <div class="w-100 ms-3">
                                     <div class="d-flex w-100 align-items-center justify-content-between">
-                                        <span>Short task goes here...</span>
+                                        <span>Lakshmi Chawla ke Sathe 2Baje Miting hay Yead karna...</span>
+                                        <button class="btn btn-sm"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center border-bottom py-2">
+                                <input class="form-check-input m-0" type="checkbox">
+                                <div class="w-100 ms-3">
+                                    <div class="d-flex w-100 align-items-center justify-content-between">
+                                        <span>Meera Chakrabarti ke Sathe subha 9 Baje Miting hay Yead karna...</span>
                                         <button class="btn btn-sm"><i class="fa fa-times"></i></button>
                                     </div>
                                 </div>
@@ -863,26 +937,17 @@
                                 <input class="form-check-input m-0" type="checkbox" checked>
                                 <div class="w-100 ms-3">
                                     <div class="d-flex w-100 align-items-center justify-content-between">
-                                        <span><del>Short task goes here...</del></span>
+                                        <span><del>Saanvi Dey ke sathe Full Night ka miting hay 4pm Yead karna phone pe call karke...</del></span>
                                         <button class="btn btn-sm text-primary"><i class="fa fa-times"></i></button>
                                     </div>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center border-bottom py-2">
-                                <input class="form-check-input m-0" type="checkbox">
+                                <input class="form-check-input m-0" type="checkbox" checked>
                                 <div class="w-100 ms-3">
                                     <div class="d-flex w-100 align-items-center justify-content-between">
-                                        <span>Short task goes here...</span>
-                                        <button class="btn btn-sm"><i class="fa fa-times"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center pt-2">
-                                <input class="form-check-input m-0" type="checkbox">
-                                <div class="w-100 ms-3">
-                                    <div class="d-flex w-100 align-items-center justify-content-between">
-                                        <span>Short task goes here...</span>
-                                        <button class="btn btn-sm"><i class="fa fa-times"></i></button>
+                                        <span><del>Sarika Gadhavi Ke sathe 8Hours ke Sath Miting hay subha call karna Please...</del></span>
+                                        <button class="btn btn-sm text-primary"><i class="fa fa-times"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -916,9 +981,6 @@
         <!-- Content End -->
 
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-    </div>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -947,4 +1009,4 @@
 </body>
 
 
-                                                            </html>
+                                </html>
