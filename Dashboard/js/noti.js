@@ -192,8 +192,8 @@
       /* ********************** end nova alert ********************** */
 
       new novaAlert({
-          title: 'Welcome',
-          text: 'Nova is a small JavaScript plugin for creating custom alert',
+          title: 'logged in',
+          text: 'If you want to do everything on the dashboard, you must complete the registration otherwise you can only see the stats, remember that this is a demo account',
           icon: 'success',
           dismissButton: false,
           darkMode: false,
