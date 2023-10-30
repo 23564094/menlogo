@@ -7,10 +7,10 @@
     text-align: center;
     border-radius: 20px;
     padding: 16px;
-    position: fixed;
+    position: ;
     z-index: 1;
     left: 50%;
-    center: 30px;
+    right: 30px;
     font-size: 17px;
   }
   
@@ -22,20 +22,20 @@
   
   @-webkit-keyframes fadein {
     from {center: 0; opacity: 0;} 
-    to {center: 30px; opacity: 1;}
+    to {top: 30px; opacity: 1;}
   }
   
   @keyframes fadein {
     from {center: 0; opacity: 0;}
-    to {center: 30px; opacity: 1;}
+    to {top: 30px; opacity: 1;}
   }
   
   @-webkit-keyframes fadeout {
-    from {center: 30px; opacity: 1;} 
-    to {center: 0; opacity: 0;}
+    from {top: 30px; opacity: 1;} 
+    to {top: 0; opacity: 0;}
   }
   
   @keyframes fadeout {
-    from {center: 30px; opacity: 1;}
-    to {center: 0; opacity: 0;}
+    from {top: 30px; opacity: 1;}
+    to {top: 0; opacity: 0;}
   }
