@@ -9,7 +9,7 @@
   padding: 16px;
 border-radius: 12px;
   padding: 16px;
-  position: static;
+  position: fixed;
 }
 
 #snackbar.show {
