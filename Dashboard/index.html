@@ -66,48 +66,9 @@
               opacity: 1;
             }
             </style>
-        <!-- Spinner End -->
-        <div class="popup-card">
-            <button id="close-btn">
-              <span class="fa fa-times-circle"> </i> </span>
-            </button>
-          
-            <div>
-              <span class="fa fa-question-circle"> </i> </span>
-            </div>
-          
-            <div class="content">
-              <h5>Demo Accoount Login<br> UserID & Password <br> Down Below,Copy Please it</h5>
-              <div class="tooltip">
-              <input type="text" value="Demo" id="myInput">
-              <button onclick="myFunction()" onmouseout="outFunc()">
-                <span class="tooltiptext" id="myTooltip">Copy UserID & Password to clipboard</span><i class="fa fa-clipboard" aria-hidden="true"></i>
-            </i>
-                </button>
-              </div>
-              
-              <script>
-              function myFunction() {
-                var copyText = document.getElementById("myInput");
-                copyText.select();
-                copyText.setSelectionRange(0, 99999);
-                navigator.clipboard.writeText(copyText.value);
-                
-                var tooltip = document.getElementById("myTooltip");
-                tooltip.innerHTML = "Copied: " + copyText.value;
-              }
-              
-              function outFunc() {
-                var tooltip = document.getElementById("myTooltip");
-                tooltip.innerHTML = "Copy UserID & Password";
-              }
-              </script>
-            </div>
-          </div>
-        <!-- Sign In Start -->
 
         <div class="container">
-            <h1>Login</h1>
+            <h1>Dashboard</h1>
             <form action="">
                 <input type="text" placeholder="Username" class="id" required>
                 <input type="password" placeholder="Password" class="pw" required>
