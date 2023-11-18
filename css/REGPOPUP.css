@@ -1,7 +1,0 @@
-.modal.fade .modal-dialog {
-  transform: translateY(10vh);
-}
-
-.modal.show .modal-dialog {
-  transform: translateY(0);
-}
