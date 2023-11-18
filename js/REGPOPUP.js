@@ -1,20 +1,8 @@
-$(function(){
-var overlay = $('<div id="overlay"></div>');
-overlay.show();
-overlay.appendTo(document.body);
-$('.popup-onload').show();
-$('.close').click(function(){
-$('.popup-onload').hide();
-overlay.appendTo(document.body).remove();
-return false;
-});
-
-
- 
-
-$('.x').click(function(){
-$('.popup').hide();
-overlay.appendTo(document.body).remove();
-return false;
-});
-});
+$(window).ready(() => {
+	$('#myModal').modal('show');
+	// setTimeout(() => $('#myModal').modal('show'), 1000);
+	// setTimeout(() => $('#myModal').modal('hide'), 4000);
+})
+const show = () => {
+	$('#myModal').modal('show');
+}
