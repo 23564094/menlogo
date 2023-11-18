@@ -101,21 +101,80 @@
     </nav>
     <!-- Navbar End -->
 
-<div class='popup-onload'>
-<div class='cnt223'>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
 
-<h2>
-<center>Please Choose Country</center></h2>
-<br/>
-<br/>
- <center><a href='/Register/IN.html' class='close'>INDIA</a> </center><br><br></center>
-   
-   <center><a href='/Register/PK.html' class='close'>Pakistan</a> </center><br><br></center>
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
 
-<center><a href='/Register/BD.html' class='close'>Bangladesh</a> </center><br><br></center>
-</h5>
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: red;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: blue}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: red;
+}
+</style>
+</head>
+<body>
+
+
+<div class="dropdown">
+  <button class="dropbtn">Select</button>
+  <div class="dropdown-content">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  </div>
 </div>
+
+
+
+
+      </div>
+      </div>
+    </div>
+  </div>
 </div>
+
  
             <!-- Fact Start -->
     <div class="container-xxl py-5">
