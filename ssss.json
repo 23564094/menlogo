@@ -1,0 +1,14 @@
+[
+    {
+        "Name": "John Doe",
+        "From": "Kolkata",
+    },
+    {
+        "Name": "Jane Smith",
+        "From": "City B",
+    },
+    {
+        "Name": "Bob Johnson",
+        "From": "City C",
+    }
+]
